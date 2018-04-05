@@ -7,16 +7,17 @@ using namespace std;
 int main() {
 	
 	int x;
-	QEvent *objeto = new QEvent(IconDrag);
+	QEvent *objeto = new QEvent(0);
 	
 	objeto->ignore();
 	
-	cout << objeto->type() << endl;
+	if (none >= timer)
+		cout << "Aee" << endl;
+	
+	//cout << objeto->type() << endl;
 
-	x = objeto->type();
-	cout << x+1 << endl;
 
-	cout << objeto[3] << endl;
+	//cout << objeto[3] << endl;
 	
 	return 0;
 }

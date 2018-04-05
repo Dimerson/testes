@@ -2,31 +2,16 @@
  
 using namespace std;
 
-class Box {
-   public:
-      
-	enum EnumType {
-  	First,
-  	Second,
-  	Third
-	};
- 
-	void f(int intVar) {
-  	EnumType enumVar = static_cast<EnumType>(intVar);
- 
-  	if (enumVar < First || enumVar > Third) {
-    	// Handle error
-  	}
-	}
-};
 
-
-int main(void)
+int main()
 {
+	int x = 1;
 
-	EnumType novo;
+	enum Tipo{One = 1, Two = 2, Three = 3, Last = 11};
 
-	f(1);
+	if (One < Three)
+		cout << "Nao" << endl;
 
-   	return 0;
+	return 0;
+
 }

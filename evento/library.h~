@@ -186,7 +186,7 @@ class QEvent
 	public:
 
 		static int User;			//User-defined event
-		static int MaxUser;		//Last user event ID
+		static int MaxUser;			//Last user event ID
 
 		
 		QEvent(Type type)
@@ -237,5 +237,8 @@ class QEvent
 		bool origin;
 		Type tipo;
 };
+
+int QEvent::User = 1000;
+int QEvent::MaxUser = 65535;
 
 #endif
