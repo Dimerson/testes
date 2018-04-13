@@ -1,0 +1,27 @@
+#ifndef LIBRARY_H
+#define LIBRARY_H
+
+#include <iostream>
+#include "QEvent.h"
+
+class QEventTimer: public QEvent {
+	
+	public:
+
+		QEventTimer(int timerId): QEVent(MouseMove)
+		{
+			this->id = timerId;
+		}
+
+		int timerId() const
+		{
+			return this->id;
+		}
+
+
+	private:
+
+		int id;
+};
+
+#endif
