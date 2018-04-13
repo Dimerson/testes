@@ -228,7 +228,7 @@ class QEvent
 			return this->tipo;
 		}
 
-		static int registerEventType(int hint = -1);
+		//static int registerEventType(int hint = -1);
 			
 	
 	private:
