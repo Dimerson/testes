@@ -1,8 +1,6 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
-#include <iostream>
-
 enum Type{
 	None = 0,					//Not an event
 	Timer = 1,					//Regular timer events
@@ -177,8 +175,7 @@ enum Type{
 
 	PlatformSurface = 217,				//A native platform surface has been created or is about to be destroyed
 
-	TabletTrackingChange = 219,			//The Wacom tablet tracking state has changed
-	
+	TabletTrackingChange = 219			//The Wacom tablet tracking state has changed
 };
 
 class QEvent

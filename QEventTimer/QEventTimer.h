@@ -1,14 +1,17 @@
 #ifndef QEVENTTIMER_H
 #define QEVENTTIMER_H
 
-#include <iostream>
-#include "QEvent.h"
+#include "../QEvent/QEvent.h"
 
-class QEventTimer: public QEvent {
+class QEventTimer: public QEvent
+{
 	
+	private:
+		int id;
+
 	public:
 
-		QEventTimer(int timerId): QEVent(MouseMove)
+		QEventTimer(int timerId): QEvent(Timer)
 		{
 			this->id = timerId;
 		}
@@ -18,10 +21,6 @@ class QEventTimer: public QEvent {
 			return this->id;
 		}
 
-
-	private:
-
-		int id;
 };
 
 #endif
