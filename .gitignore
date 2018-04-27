@@ -1,3 +1,12 @@
 #ignorar todos os arquivos terminados em .~
 
 *.cpp~
+
+#ignorar todos os arquivos .h~
+
+*.h~
+
+#ignorar os executaveis
+
+main
+
