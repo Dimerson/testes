@@ -2,16 +2,16 @@
 #define LIBRARY_H
 
 enum Type{
-	None = 0,					//Not an event
-	Timer = 1,					//Regular timer events
+	None = 0,					//Not an event*
+	Timer = 1,					//Regular timer events*
 	MouseButtonPress = 2,				//Mouse press
 	MouseButtonRelease = 3,				//Mouse release
 	MouseButtonDblClick = 4,			//Mouse press again
 	MouseMove = 5,					//Mouse move
 	KeyPress = 6,					//Key press
 	KeyRelease = 7,					//Key release
-	FocusIn = 8,					//Widget or Window gains keyboard focus
-	FocusOut = 9,					//Widget or Window loses keyboard focus
+	FocusIn = 8,					//Widget or Window gains keyboard focus*
+	FocusOut = 9,					//Widget or Window loses keyboard focus*
 	Enter = 10,					//Mouse enters widget's boundaries
 	Leave = 11,					//Mouse leaves widget's boundaries
 	Paint = 12,					//Screen update necessary
