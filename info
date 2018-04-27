@@ -2,3 +2,5 @@ Programas testáveis:
 
 - QEvent
 - QEventTimer
+- QFocusEvent
+- QInputEvent
