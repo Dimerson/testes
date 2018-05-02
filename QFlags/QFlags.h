@@ -3,21 +3,17 @@
 
  Author: Dimerson Coelho
 
- Date: Abril 2018
+ Date: Maio 2018
 
  \*******************************************************************/
 
-#ifndef QMOUSEEVENT_H
-#define QMOUSEEVENT_H
+#ifndef QFLAGS_H
+#define QFLAGS_H
 
-#include "../QEvent/QEvent.h"
-
-class QMouseEvent: public QEvent
+class QFlags
 {
+	private:
+
+
 	public:
-
-		QMouseEvent();
-		~QMouseEvent();
-}
-
-#endif
+		

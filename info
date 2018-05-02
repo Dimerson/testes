@@ -4,3 +4,19 @@ Programas testáveis:
 - QEventTimer
 - QFocusEvent
 - QInputEvent
+- QPoint
+- QPointF
+
+
+Abril:
+
+- QEvent
+- QEventTimer
+- QFocusEvent
+- QInputEvent
+- QPoint
+
+
+Maio:
+
+- QPointF

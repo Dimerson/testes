@@ -1,3 +1,12 @@
+/*******************************************************************
+ Module:
+
+ Author: Dimerson Coelho
+
+ Date: Abril 2018
+
+ \*******************************************************************/
+
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
@@ -193,32 +202,39 @@ class QEvent
 			this->origin = 1;
 		}
 
+
 		~QEvent();
 		
-		void setAccepted(bool accepted)
+
+		void setAccepted(bool accepted)		//set the flag
 		{
 			this->flag = accepted;
 		}
 
-		void accept()
+
+		void accept()				//set the flag TRUE
 		{
 			this->setAccepted(1);
 		}
 
-		void ignore()
+
+		void ignore()				//set the flag FALSE
 		{
 			this->setAccepted(0);
 		}
+
 
 		bool isAccepted() const
 		{
 			return this->flag;
 		}
 
+
 		bool spontaneous() const
 		{
 			return this->origin;
 		}
+
 
 		Type type()
 		{
