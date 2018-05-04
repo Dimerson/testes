@@ -3,7 +3,7 @@
 
  Author: Dimerson Coelho
 
- Date: Abril 2018
+ Date: Maio 2018
 
  \*******************************************************************/
 
@@ -16,9 +16,21 @@
 
 class QKeyEvent: public QInputEvent
 {
-	QKeyEvent(Type type, int key, Qt::KeyboardModifiers modifiers, const QString &text = QString(), bool autorep = false, unsigned short count = 1): QEvent(type)
-	{
-		assert(this->type() == KeyPress || this->type() == KeyRelease || this->type() == ShortcutOverride);
-		
+	private:
+		Key chave;
+		KeyboardModifiers modifiers;
+		char *str;
+		bool repete;
+		int contador;
 
-}
+	public:
+		QKeyEvent(Type type, int key, Qt::KeyboardModifiers modifiers, const QString &text = QString(), bool autorep = false, unsigned short count = 1): QEvent(type)
+		{
+			assert(this->type() == KeyPress || this->type() == KeyRelease || this->type() == ShortcutOverride);
+			chave = key;
+			this->modifiers = modifiers;
+			str = text.at(0);
+			repete = autorep;
+			contador = count;
+		}
+};
